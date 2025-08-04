@@ -24,9 +24,7 @@ const items = ref([
           <NuxtLink :to="item.route">{{ item.label }}</NuxtLink>
         </template>
       </Menubar>
-      <div>
-        <p>63 Hunter St, Albouystown</p>
-      </div>
+      <TopBar />
     </header>
     <main class="py-4">
       <NuxtPage />
