@@ -1,0 +1,15 @@
+{
+  "name": "Pastries",
+  "isActive": true,
+  "items": [
+    {
+      "name": "Cheese Roll",
+      "price": 100,
+      "description": "Buttery and flaky croissant"
+    },
+    {
+      "name": "Beef Patty",
+      "price": 160
+    }
+  ]
+}

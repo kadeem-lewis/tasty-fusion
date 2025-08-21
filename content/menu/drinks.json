@@ -1,0 +1,15 @@
+{
+  "name": "Drinks",
+  "isActive": true,
+  "items": [
+    {
+      "name": "Coffee",
+      "price": 2.5,
+      "description": "Freshly brewed coffee"
+    },
+    {
+      "name": "Tea",
+      "price": 2.0
+    }
+  ]
+}
