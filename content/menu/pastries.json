@@ -10,6 +10,11 @@
     {
       "name": "Beef Patty",
       "price": 160
+    },
+    {
+      "name": "Pine Tart",
+      "price": 120,
+      "description": "Sweet and tangy pineapple filling"
     }
   ]
 }

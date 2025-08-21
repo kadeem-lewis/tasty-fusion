@@ -8,8 +8,13 @@
       "description": "Freshly brewed coffee"
     },
     {
-      "name": "Tea",
-      "price": 2.0
+      "name": "Fruit Smoothie",
+      "price": 110
+    },
+    {
+      "name": "Fruit Juice",
+      "price": 80,
+      "description": "Freshly squeezed juice"
     }
   ]
 }

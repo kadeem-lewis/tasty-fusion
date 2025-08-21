@@ -12,7 +12,7 @@ export default defineContentConfig({
           z.object({
             name: z.string(),
             description: z.string().optional(),
-            price: z.number().positive(),
+            price: z.number().positive().int(),
           })
         ),
       }),
