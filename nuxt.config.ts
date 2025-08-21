@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/fonts",
     "@primevue/nuxt-module",
+    "@nuxt/content",
   ],
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
