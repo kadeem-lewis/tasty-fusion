@@ -1,19 +1,23 @@
 {
   "name": "Pastries",
   "isActive": true,
+  "order": 2,
   "items": [
     {
       "name": "Cheese Roll",
       "price": 100,
+      "isAvailable": true,
       "description": "Buttery and flaky croissant"
     },
     {
       "name": "Beef Patty",
-      "price": 160
+      "price": 160,
+      "isAvailable": true
     },
     {
       "name": "Pine Tart",
       "price": 120,
+      "isAvailable": true,
       "description": "Sweet and tangy pineapple filling"
     }
   ]

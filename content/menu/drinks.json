@@ -1,20 +1,24 @@
 {
   "name": "Drinks",
   "isActive": true,
+  "order": 4,
   "items": [
     {
-      "name": "Coffee",
-      "price": 2.5,
-      "description": "Freshly brewed coffee"
+      "name": "Coconut Water",
+      "price": 200,
+      "isAvailable": true
     },
     {
       "name": "Fruit Smoothie",
-      "price": 110
+      "price": 110,
+      "isAvailable": true
     },
     {
       "name": "Fruit Juice",
       "price": 80,
-      "description": "Freshly squeezed juice"
+      "description": "Freshly squeezed juice",
+      "variants": ["Orange", "Cherry", "Passion Fruit"],
+      "isAvailable": true
     }
   ]
 }

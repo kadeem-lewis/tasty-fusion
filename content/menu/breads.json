@@ -1,0 +1,22 @@
+{
+  "name": "Breads",
+  "isActive": true,
+  "order": 3,
+  "items": [
+    {
+      "name": "Dhal Puri",
+      "price": 100,
+      "isAvailable": true
+    },
+    {
+      "name": "Roti",
+      "price": 80,
+      "isAvailable": true
+    },
+    {
+      "name": "Loaf of Bread",
+      "price": 150,
+      "isAvailable": true
+    }
+  ]
+}

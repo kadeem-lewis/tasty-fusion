@@ -1,0 +1,17 @@
+{
+  "name": "Main Dishes",
+  "isActive": true,
+  "order": 1,
+  "items": [
+    {
+      "name": "Fish and Chips",
+      "price": 600,
+      "isAvailable": true
+    },
+    {
+      "name": "Chicken and Chips",
+      "price": 500,
+      "isAvailable": true
+    }
+  ]
+}
