@@ -30,6 +30,9 @@ export default defineNuxtConfig({
         serviceId: "",
         templateId: "",
       },
+      googleMaps: {
+        apiKey: "",
+      },
     },
   },
   devServer: {
