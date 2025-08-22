@@ -7,9 +7,7 @@ const { icon, title, subtitle } = defineProps<{
 </script>
 <template>
   <div class="flex gap-2 items-center">
-    <Chip>
-      <Icon :name="icon" />
-    </Chip>
+    <UBadge size="xl" :icon="icon" />
     <div>
       <p class="font-semibold">{{ title }}</p>
       <p class="text-sm">{{ subtitle }}</p>
