@@ -7,30 +7,15 @@ const items = ref([
 ]);
 </script>
 <template>
-  <div class="min-h-dvh max-w-6xl flex flex-col mx-auto">
-    <NuxtRouteAnnouncer />
-    <header>
-      <Menubar
-        :model="items"
-        :pt="{
-          rootList: 'w-full',
-        }"
-        class="uppercase font-semibold"
-      >
-        <template #start>
-          <NuxtLink to="/"> Tasty Fusion </NuxtLink>
-        </template>
-        <template #item="{ item }">
-          <NuxtLink :to="item.route">{{ item.label }}</NuxtLink>
-        </template>
-      </Menubar>
+  <UApp>
+    <UContainer class="min-h-dvh flex flex-col mx-auto">
+      <NuxtRouteAnnouncer />
+      <TheHeader />
       <TopBar />
-    </header>
-    <main class="py-4">
-      <NuxtPage />
-    </main>
-    <footer id="footer" class="self-center">
-      <p>&copy; 2025 Tasty Fusion. All rights reserved.</p>
-    </footer>
-  </div>
+      <main class="h-full grow py-4">
+        <NuxtPage />
+      </main>
+      <TheFooter />
+    </UContainer>
+  </UApp>
 </template>
