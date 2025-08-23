@@ -8,14 +8,16 @@ const items = ref([
 </script>
 <template>
   <UApp>
-    <UContainer class="min-h-dvh flex flex-col mx-auto">
-      <NuxtRouteAnnouncer />
+    <NuxtRouteAnnouncer />
+    <div class="flex flex-col min-h-dvh">
       <TheHeader />
       <TopBar />
-      <main class="h-full grow py-4">
-        <NuxtPage />
-      </main>
+      <UContainer class="h-full grow">
+        <main class="py-4">
+          <NuxtPage />
+        </main>
+      </UContainer>
       <TheFooter />
-    </UContainer>
+    </div>
   </UApp>
 </template>
