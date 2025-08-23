@@ -4,12 +4,27 @@ import { z } from "zod";
 import emailjs from "@emailjs/browser";
 
 const schema = z.object({
-  firstName: z.string().min(2).max(100),
-  lastName: z.string().min(2).max(100),
+  firstName: z
+    .string()
+    .min(2, { error: "First name too short" })
+    .max(100, { error: "First name too long" }),
+  lastName: z
+    .string()
+    .min(2, { error: "Last name too short" })
+    .max(100, { error: "Last name too long" }),
   email: z.email("Invalid Email"),
-  phone: z.string().min(10).max(15),
-  title: z.string().min(2).max(100),
-  message: z.string().min(2).max(500, { error: "Message too long" }),
+  phone: z
+    .string()
+    .min(10, { error: "Phone number too short" })
+    .max(15, { error: "Phone number too long" }),
+  title: z
+    .string()
+    .min(2, { error: "Please enter a longer title" })
+    .max(100, { error: "Title cannot be more than 100 characters" }),
+  message: z
+    .string()
+    .min(2, "Please enter a longer message")
+    .max(500, { error: "Message too long" }),
 });
 
 type Schema = z.infer<typeof schema>;
@@ -81,14 +96,14 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       @submit="onSubmit"
       class="grid md:grid-cols-2 gap-x-2 gap-y-4"
     >
-      <UFormField id="first-name" name="first-name" label="First Name">
+      <UFormField id="firstName" name="firstName" label="First Name">
         <UInput
           v-model="state.firstName"
           class="w-full"
           placeholder="First Name"
         />
       </UFormField>
-      <UFormField id="last-name" name="last-name" label="Last Name">
+      <UFormField id="lastName" name="lastName" label="Last Name">
         <UInput
           v-model="state.lastName"
           class="w-full"
