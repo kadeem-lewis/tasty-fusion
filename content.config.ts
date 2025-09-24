@@ -2,6 +2,22 @@ import { defineContentConfig, defineCollection, z } from "@nuxt/content";
 
 export default defineContentConfig({
   collections: {
+    landingPage: defineCollection({
+      type: "data",
+      source: "data/landing-page.json",
+      schema: z.object({
+        hero: z.object({
+          title: z.string(),
+          subtitle: z.string(),
+          text: z.string(),
+        }),
+        about: z.object({
+          title: z.string(),
+          subitle: z.string(),
+          text: z.string(),
+        }),
+      }),
+    }),
     menu: defineCollection({
       type: "data",
       source: "menu/**.json",
