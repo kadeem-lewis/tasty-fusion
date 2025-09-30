@@ -6,11 +6,13 @@ const { icon, title, subtitle } = defineProps<{
 }>();
 </script>
 <template>
-  <div class="flex gap-2 items-center">
-    <UBadge size="xl" :icon="icon" />
-    <div>
-      <p class="font-semibold">{{ title }}</p>
-      <p class="text-sm">{{ subtitle }}</p>
-    </div>
-  </div>
+  <UUser
+    class="flex gap-2 items-center"
+    :name="title"
+    :description="subtitle"
+    size="3xl"
+    :avatar="{
+      icon: icon,
+    }"
+  />
 </template>

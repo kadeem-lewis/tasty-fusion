@@ -23,16 +23,18 @@ const contactInfoItems = [
 ];
 </script>
 <template>
-  <UCard>
-    <template #header>
-      <h2 class="text-xl">Contact Information</h2>
-    </template>
-    <div class="flex flex-col gap-4">
-      <ContactInfoItem
-        v-for="item of contactInfoItems"
-        :key="item.title"
-        v-bind="item"
-      />
-    </div>
-  </UCard>
+  <UPageSection>
+    <UCard title="Contact Information" class="h-full">
+      <template #header>
+        <h2 class="text-2xl font-bold text-center">Contact Information</h2>
+      </template>
+      <div class="flex flex-col gap-4">
+        <ContactInfoItem
+          v-for="item of contactInfoItems"
+          :key="item.title"
+          v-bind="item"
+        />
+      </div>
+    </UCard>
+  </UPageSection>
 </template>

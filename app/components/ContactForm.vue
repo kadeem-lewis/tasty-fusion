@@ -88,8 +88,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 }
 </script>
 <template>
-  <section class="flex flex-col gap-4 w-full">
-    <h1 class="capitalize text-3xl font-bold text-center">Get in Touch</h1>
+  <UPageSection class="flex flex-col gap-4 w-full" title="Get in Touch">
     <UForm
       :schema="schema"
       :state="state"
@@ -139,5 +138,5 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         >Send Message</UButton
       >
     </UForm>
-  </section>
+  </UPageSection>
 </template>
