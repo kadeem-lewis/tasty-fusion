@@ -13,7 +13,7 @@ export default defineContentConfig({
         }),
         about: z.object({
           title: z.string(),
-          subitle: z.string(),
+          subtitle: z.string(),
           text: z.string(),
         }),
       }),
