@@ -1,16 +1,18 @@
 <script setup lang="ts"></script>
 <template>
-  <UPageSection id="testimonials" title="What Our Customers Say">
+  <UPageSection id="reviews" title="What Our Customers Say">
     <UPageGrid>
       <UPageCard
         v-for="i in 3"
         :key="i"
         icon="i-ri-double-quotes-l"
         class="flex flex-col justify-between p-6"
-        :ui="{
-          leadingIcon: 'size-8 text-red-500 text-center',
-        }"
       >
+        <template #leading>
+          <div class="flex items-center justify-center">
+            <UIcon name="i-ri-double-quotes-l" size="18" class="text-red-500" />
+          </div>
+        </template>
         <div>
           <p class="mb-4">
             "The food was absolutely delicious and the service was exceptional.

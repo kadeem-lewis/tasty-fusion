@@ -2,16 +2,25 @@
 const { aboutData } = defineProps<{
   aboutData: {
     title: string;
+    subtitle: string;
     text: string;
   };
 }>();
 </script>
 <template>
-  <section>
-    <h2 class="uppercase font-bold text-2xl text-center">
-      {{ aboutData.title }}
-    </h2>
-    <p>{{ aboutData.subtitle }}</p>
-    <p class="text-center">{{ aboutData.text }}</p>
-  </section>
+  <UPageSection
+    class="flex gap-6"
+    :headline="aboutData.title"
+    :title="aboutData.subtitle"
+    :description="aboutData.text"
+    orientation="horizontal"
+  >
+    <NuxtImg
+      src="https://placehold.co/600x400"
+      height="400"
+      width="600"
+      alt="About Us"
+      class="mb-4 rounded"
+    />
+  </UPageSection>
 </template>
