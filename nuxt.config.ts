@@ -32,6 +32,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    baseURL: "/tasty-fusion/",
+  },
   devServer: {
     port: 3003,
   },
