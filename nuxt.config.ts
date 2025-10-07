@@ -44,6 +44,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  nitro: {
+    preset: "github-pages",
+  },
   devServer: {
     port: 3003,
   },
