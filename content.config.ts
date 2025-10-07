@@ -30,6 +30,7 @@ export default defineContentConfig({
             name: z.string(),
             description: z.string().optional(),
             isAvailable: z.boolean().default(true),
+            isPopular: z.boolean().default(false),
             price: z.number().positive().int(),
             variants: z.array(z.string()).optional(),
           })

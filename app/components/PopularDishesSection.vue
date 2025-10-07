@@ -1,9 +1,26 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { data: popularItems } = await useAsyncData("popularDishes", async () => {
+  const menuItems = await queryCollection("menu")
+    .where("isActive", "=", true)
+    .all();
+  return menuItems
+    .flatMap((category) =>
+      category.items.filter((item) => item.isPopular && item.isAvailable)
+    )
+    .slice(0, 3);
+});
+
+console.log(popularItems);
+</script>
 <template>
   <UPageSection id="popular" class="space-y-6" title="Popular Dishes">
     <template #body>
       <UPageGrid>
-        <PopularDishesCard v-for="i in 3" :key="i" />
+        <PopularDishesCard
+          v-for="item in popularItems"
+          :key="item.name"
+          :item="item"
+        />
       </UPageGrid>
     </template>
 

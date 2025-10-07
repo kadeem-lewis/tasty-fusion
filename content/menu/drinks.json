@@ -11,7 +11,9 @@
     {
       "name": "Fruit Smoothie",
       "price": 110,
-      "isAvailable": true
+      "isAvailable": true,
+      "description": "Blended fresh fruits",
+      "isPopular": true
     },
     {
       "name": "Fruit Juice",

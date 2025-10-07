@@ -6,12 +6,14 @@
     {
       "name": "Fish and Chips",
       "price": 600,
-      "isAvailable": true
+      "isAvailable": true,
+      "isPopular": false
     },
     {
       "name": "Chicken and Chips",
       "price": 500,
-      "isAvailable": true
+      "isAvailable": true,
+      "isPopular": false
     }
   ]
 }

@@ -7,17 +7,20 @@
       "name": "Cheese Roll",
       "price": 100,
       "isAvailable": true,
+      "isPopular": false,
       "description": "Buttery and flaky croissant"
     },
     {
       "name": "Beef Patty",
       "price": 160,
-      "isAvailable": true
+      "isAvailable": true,
+      "isPopular": true
     },
     {
       "name": "Pine Tart",
       "price": 120,
       "isAvailable": true,
+      "isPopular": false,
       "description": "Sweet and tangy pineapple filling"
     }
   ]
