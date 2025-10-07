@@ -4,7 +4,7 @@ const { data } = await useAsyncData("landingPage", () => {
 });
 </script>
 <template>
-  <div class="[&>*:nth-child(even)]:bg-neutral-100">
+  <div v-if="data" class="[&>*:nth-child(even)]:bg-neutral-100">
     <HeroSection :hero-data="data.hero" />
     <PopularDishesSection />
     <AboutUsSection :about-data="data.about" />
